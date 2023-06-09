@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <link href="/dist/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/shortLogo.png" type="image/x-icon">
+
+    <!-- Header and footer script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("/dist/header.html");
+            $("#footer").load("/dist/footer.html");
+        });
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <section class="text-gray-800 bg-gradient-to-r from-pink-500 to-purple-500">
+        <div class="container px-5 py-16 mx-auto flex flex-wrap items-center justify-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0 lg:order-first">
+                <h1 class="text-3xl font-semibold title-font text-white mb-4">Bill Payments Made Easy</h1>
+                <p class="text-white leading-relaxed">PayGrid Technologies has made bill payments easy and accessible, allowing for
+                    secure online bill payments.</p>
+            </div>
+            <div class="lg:w-1/2 w-full lg:order-last">
+                <img class="object-cover object-center rounded-lg h-auto" alt="Mobile Screenshot"
+                    src="https://payinstacard.com/wp-content/uploads/2023/05/header-smartphone-1175x1536.png" width="400px">
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-800 bg-white">
+        <div class="container px-5 py-16 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="text-3xl font-semibold title-font text-gray-800 mb-4">Our Best Services</h1>
+                <p class="text-base leading-relaxed text-gray-600">PayGrid Technologies is an app that makes bill payments easy and
+                    rewarding. You can pay all your bills, like utilities, rent, education and more, in one place and earn
+                    cashback on every transaction.</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <div class="h-full bg-gray-100 p-8 rounded-lg flex flex-col items-center">
+                        <img class="object-cover object-center w-16 h-16 mb-4"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/features-icon-1.png"
+                            alt="Recharge Icon">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Recharge</h2>
+                        <p class="leading-relaxed text-gray-600">Recharge your mobile or any prepaid connection quickly and
+                            conveniently.</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <div class="h-full bg-gray-100 p-8 rounded-lg flex flex-col items-center">
+                        <img class="object-cover object-center w-16 h-16 mb-4"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/features-icon-2.png"
+                            alt="Electricity Bill Icon">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Pay Electricity Bill</h2>
+                        <p class="leading-relaxed text-gray-600">Easily pay your electricity bill online without any hassle.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <div class="h-full bg-gray-100 p-8 rounded-lg flex flex-col items-center">
+                        <img class="object-cover object-center w-16 h-16 mb-4"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/features-icon-3.png"
+                            alt="Recharge DTH or TV Icon">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Recharge DTH or TV</h2>
+                        <p class="leading-relaxed text-gray-600">Recharge your DTH or TV subscription with just a few
+                            clicks.</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <div class="h-full bg-gray-100 p-8 rounded-lg flex flex-col items-center">
+                        <img class="object-cover object-center w-16 h-16 mb-4"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/features-icon-4.png"
+                            alt="Book Gas Icon">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Book Gas</h2>
+                        <p class="leading-relaxed text-gray-600">Book your gas cylinder online and get it delivered at your
+                            doorstep.</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <div class="h-full bg-gray-100 p-8 rounded-lg flex flex-col items-center">
+                        <img class="object-cover object-center w-16 h-16 mb-4"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/features-icon-5.png"
+                            alt="Broadband Bill Icon">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Pay Broadband Bill</h2>
+                        <p class="leading-relaxed text-gray-600">Conveniently pay your broadband bill online without any
+                            delays.</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <div class="h-full bg-gray-100 p-8 rounded-lg flex flex-col items-center">
+                        <img class="object-cover object-center w-16 h-16 mb-4"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/features-icon-6.png"
+                            alt="Rent using Credit Card Icon">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Pay Rent using Credit Card</h2>
+                        <p class="leading-relaxed text-gray-600">Pay your rent using your credit card and enjoy cashback
+                            benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-800 bg-gray-100">
+        <div class="container px-5 py-16 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full bg-white p-8 rounded-lg">
+                        <img class="object-cover object-center w-full h-64 mb-6 rounded-lg"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/details-1-1024x699.jpg"
+                            alt="Rent Image">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Pay Your Rent Using Credit Card</h2>
+                        <p class="leading-relaxed text-gray-600">Paying rent can be a hassle, especially when it eats into
+                            your paycheck. But paying rent with your credit card can be a blessing, keeping your bank
+                            balance intact while still taking care of your rental obligations.</p>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full bg-white p-8 rounded-lg">
+                        <img class="object-cover object-center w-full h-64 mb-6 rounded-lg"
+                            src="https://payinstacard.com/wp-content/uploads/2023/05/details-2-1024x699.jpg"
+                            alt="Rewards Image">
+                        <h2 class="text-lg font-medium text-gray-900 title-font mb-4">Why PayGrid Technologies For Paying Rent Using
+                            Credit Card?</h2>
+                        <ul class="list-disc ml-6 leading-relaxed text-gray-600">
+                            <li>Less convenience fee.</li>
+                            <li>Assured Rewards and Offers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-white bg-gradient-to-r from-pink-500 to-purple-500">
+        <div class="container px-5 py-16 mx-auto">
+            <div class="text-center">
+                <h1 class="text-3xl font-semibold title-font mb-4">PayGrid Technologies - Easy and Rewarding Bill Payments</h1>
+                <p class="text-base leading-relaxed">PayGrid Technologies is an app that makes bill payments easy and rewarding. You
+                    can pay all your bills, like utilities, rent, education, and more, in one place and earn cashback on
+                    every transaction.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footer"></div>
+
+</body>
+
+</html>

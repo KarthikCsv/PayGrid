@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/style.css" rel="stylesheet">
+    <title>Website</title>
+    <link rel="shortcut icon" href="/shortLogo.png" type="image/x-icon">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css'>
+
+    <!-- Header and footer script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("/dist/header.html");
+            $("#footer").load("/dist/footer.html");
+            $("#marquee").load("/dist/marquee.html");
+        });
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="text-gray-800 bg-white">
+        <div class="container px-5 py-16 mx-auto flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 w-full lg:pr-10">
+                <h2 class="text-3xl font-semibold title-font text-gray-800 mb-4">Contact us for Support</h2>
+                <p class="text-lg leading-relaxed text-gray-600 mb-6">We would love to hear from you! Whether you have a
+                    question, concern, or feedback to share, our team is here to help. Please don’t hesitate to contact us
+                    using the information provided below. We look forward to assisting you and ensuring your satisfaction
+                    with our services.</p>
+            </div>
+            <div class="lg:w-1/2 w-full">
+                <img class="object-cover object-center rounded-lg h-80 md:h-auto" alt="Contact Us"
+                    src="https://payinstacard.com/wp-content/uploads/2023/05/details-3-1024x895.jpg" width="400">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font relative">
+        <div class="absolute inset-0 bg-gray-300">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d475.6440552043456!2d78.415337!3d17.500235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91c42d037e97%3A0x93be142bb42f63c7!2sSai%20Nagar%20West%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1686319027556!5m2!1sen!2sin"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div
+                class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Contact Us</h2>
+                <p class="leading-relaxed mt-5 text-purple-800 text-lg mb-2">Corporate Office</p>
+                <p>Paygrid Technologies
+                Plot no 182/P sai nagar west allwyn Colony near K L BAR AND RESTAURANT KUKATPALLY MEDCHAL 500072</p>
+                <p class="leading-relaxed mt-5 text-purple-800 mb-2 text-lg">WhatsApp</p>
+                <a href="https://wa.me/918184895852">
+                    <p>+91 8184895852</p>
+                </a>
+    
+                <p class="leading-relaxed mt-5 text-purple-800 mb-2 text-lg">Contact Number</p>
+                <a href="tel:+91 8184895852">
+                    <p>+91 8184895852</p>
+                </a>
+                <p class="leading-relaxed mt-5 text-purple-800 mb-2 text-lg">Mail</p>
+                <a href="mailto:Support@paygrid.co.in">
+                    <p>Support@paygrid.co.in</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+</body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/style.css" rel="stylesheet">
+    <title>Website</title>
+    <link rel="shortcut icon" href="/shortLogo.png" type="image/x-icon">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css'>
+
+    <!-- Header and footer script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("/dist/header.html");
+            $("#footer").load("/dist/footer.html");
+            $("#marquee").load("/dist/marquee.html");
+        });
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div id="marquee"></div>
+
+
+    <div id="footer"></div>
+</body>
